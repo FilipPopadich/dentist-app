@@ -1,0 +1,29 @@
+.contact-page .contact-hero {
+    padding: 2rem 0;
+}
+
+.contact-page .contact-subheading {
+    margin-top: 1.5rem;
+}
+
+.contact-page .contact-send-btn {
+    width: 100%;
+}
+
+.contact-page .contact-parking-card {
+    margin-top: 1.5rem;
+}
+
+.contact-page .contact-emergency-section {
+    background: var(--accent-bg);
+    border-radius: 24px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.contact-page .card form,
+.contact-page .form-group,
+.contact-page .contact-send-btn {
+    width: 100%;
+}

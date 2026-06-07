@@ -1,0 +1,34 @@
+.designer-hero {
+    padding: 2rem 0;
+}
+
+.designer-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.designer-card {
+    text-align: center;
+}
+
+.designer-button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.designer-github-btn {
+    margin-right: 0;
+}
+
+.designer-home-btn {
+    margin-left: 0;
+}
+
+.designer-footer-note {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--muted-foreground);
+}

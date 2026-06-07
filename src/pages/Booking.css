@@ -1,0 +1,60 @@
+.booking-page .booking-hero {
+    padding: 2rem 0;
+}
+
+.booking-page .booking-confirmation-card {
+    max-width: 500px;
+    margin: 2rem auto;
+    text-align: left;
+}
+
+.booking-page .booking-divider {
+    margin: 1rem 0;
+}
+
+.booking-page .booking-another-btn {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.booking-page .booking-form-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.booking-page .booking-form-card {
+    padding: 2rem;
+}
+
+.booking-page .booking-submit-btn {
+    width: 100%;
+}
+
+.booking-page .booking-note {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.booking-page .booking-help-section {
+    text-align: center;
+}
+
+.booking-page .form-group {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.booking-help-section {
+    padding-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+    .booking-page .booking-hero {
+        padding: 2rem 1rem;
+    }
+
+    .booking-help-section {
+        padding-bottom: 2rem;
+    }
+}

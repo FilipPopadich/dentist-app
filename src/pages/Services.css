@@ -1,0 +1,297 @@
+.services-page .signs-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin: 1.5rem auto;
+    justify-items: center;
+}
+
+.services-page .sign-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 1.2rem;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: var(--shadow);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.services-page .sign-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.services-page .sign-icon {
+    color: var(--primary);
+    margin-bottom: 0.75rem;
+    width: 32px;
+    height: 32px;
+}
+
+.services-page .sign-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+    color: var(--primary);
+}
+
+.services-page .sign-description {
+    font-size: 0.85rem;
+    color: var(--muted-foreground);
+    line-height: 1.4;
+}
+
+.services-page .aftercare-list {
+    max-width: 100%;
+    margin: 1rem 0;
+    background: var(--accent);
+    border-radius: 20px;
+    padding: 1rem;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+}
+
+.services-page .aftercare-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem 0;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    text-align: left;
+}
+
+.services-page .aftercare-icon {
+    color: var(--primary);
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+}
+
+.services-details-container {
+    margin: 1.5rem 0;
+}
+
+.services-consultation-container {
+    margin-top: 1.5rem;
+}
+
+.services-root-canal-title {
+    padding-bottom: 3rem;
+}
+
+.services-root-canal-section {
+    padding-top: 0;
+}
+
+.services-page .services-details-list,
+.services-page .services-cost-list {
+    text-align: left;
+    padding-left: 0;
+    list-style: none;
+    margin: 1rem 0;
+}
+
+.services-page .services-details-list {
+    counter-reset: step-counter;
+}
+
+.services-page .services-details-list li {
+    counter-increment: step-counter;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+}
+
+.services-page .services-details-list li::before {
+    content: counter(step-counter);
+    background: var(--primary);
+    color: var(--background);
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.services-page .services-cost-list {
+    list-style: disc;
+    padding-left: 1.5rem;
+}
+
+.services-page .services-cost-list li {
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.services-page .two-column-lists {
+    display: flex;
+    gap: 2rem;
+    margin: 1.5rem 0;
+    flex-wrap: wrap;
+}
+
+.services-page .list-column {
+    flex: 1;
+    min-width: 200px;
+}
+
+.services-page .list-column h4 {
+    text-align: left;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.services-details-container h4 {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.services-page .aftercare-title-icon {
+    margin-right: 4px;
+    vertical-align: middle;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+
+.services-page .grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    align-items: stretch;
+}
+
+.services-page .grid-2 .card {
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
+    text-align: center;
+    align-items: center;
+}
+
+.services-page .card h3,
+.services-page .card p {
+    text-align: center;
+}
+
+.services-page .service-footer {
+    margin-top: auto;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.services-page .service-footer .btn {
+    display: inline-block;
+    width: auto;
+}
+
+.services-page .service-tag {
+    background: white;
+    color: var(--primary);
+    padding: 0.5rem 1rem;
+    border-radius: 40px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 2px solid var(--primary);
+    position: relative;
+    z-index: 0;
+    overflow: visible;
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.services-page .service-tag::before {
+    --vibrance: 50%;
+    content: "";
+    position: absolute;
+    inset: -6px;
+    background: linear-gradient(to right in oklch longer hue, oklch(95% var(--vibrance) 0) 0 100%);
+    filter: blur(10px);
+    border-radius: inherit;
+    z-index: -2;
+    opacity: 0.85;
+    pointer-events: none;
+}
+
+.services-page .service-tag::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: white;
+    border-radius: inherit;
+    z-index: -1;
+}
+
+.services-page .services-details-container .signs-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 0;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.services-page .signs-grid {
+    margin-left: auto;
+    margin-right: auto;
+    justify-items: center;
+}
+
+.services-insurance-note {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .services-page .two-column-lists {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .services-page .list-column {
+        width: 100%;
+    }
+    .services-page .services-details-list li::before {
+        width: 24px;
+        height: 24px;
+        font-size: 0.8rem;
+    }
+    .services-details-container h4 {
+        margin-top: 1rem;
+        padding-left: 0.75rem;
+    }
+    .services-page .aftercare-list {
+        padding: 0.75rem;
+    }
+    .services-page .signs-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .services-page .grid-2 .card {
+        min-height: auto;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+    .services-page .signs-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
